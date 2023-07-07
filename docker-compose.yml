@@ -5,8 +5,8 @@ services:
     build:
       context: ./
       target: dev
-    # volumes:
-    #   - .:/src
+    volumes:
+      - .:/app
     command: npm run start:dev
     ports:
       - "5000:5000"
